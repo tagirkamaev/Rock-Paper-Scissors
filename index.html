@@ -7,7 +7,30 @@
   </head>
   <body>
     <script>
-      console.log("Hello World");
+      // create a function for computer choice
+      function getComputerChoice() {
+        let keepGoing = true;
+        while (keepGoing) {
+          let choice = Math.floor(Math.random() * 10);
+          if (choice <= 3 && choice >= 1) {
+            console.log("Rock");
+            keepGoing = false;
+          } else if (choice <= 6 && choice >= 4) {
+            console.log("Paper");
+            keepGoing = false;
+          } else if (choice <= 9 && choice >= 7) {
+            console.log("Scissors");
+            keepGoing = false;
+          }
+        }
+      }
+
+      // create a function for user's choice
+
+      // compare two choices
+
+      // alert who is the winner
+      console.log(getComputerChoice());
     </script>
   </body>
 </html>
