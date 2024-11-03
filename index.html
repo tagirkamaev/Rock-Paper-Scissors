@@ -26,11 +26,22 @@
       }
 
       // create a function for user's choice
+      function getHumanChoice() {
+        // prompt user for decision
+        let userChoise = prompt("Choose 'Rock', 'Paper' or 'Scissors'");
+        let user = userChoise.toLowerCase();
+        if (user === "rock" || user === "paper" || user === "scissors") {
+          return user;
+        } else {
+          console.log("Incorrect input");
+        }
+      }
 
-      // compare two choices
+      // create two variables to track the score
 
       // alert who is the winner
       console.log(getComputerChoice());
+      console.log(getHumanChoice());
     </script>
   </body>
 </html>
